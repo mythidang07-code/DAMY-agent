@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Bảng trưng bày lộ trình DAMY-agent: YouTube Video Summary Agent">
+<title>DAMY-agent · Bảng trưng bày</title>
+<style>
+:root{--ink:#14233b;--muted:#62718a;--line:#e4e9f1;--paper:#fff;--bg:#f5f7fb;--blue:#3658d4;--green:#18794e;--amber:#a45d00;--red:#ba3e3e}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+.hero{background:radial-gradient(circle at 84% 18%,#516de1 0,transparent 31%),linear-gradient(125deg,#101e36,#243c66);color:#fff;padding:64px max(24px,calc((100vw - 1120px)/2)) 56px}
+.kicker{text-transform:uppercase;letter-spacing:.16em;font-size:12px;color:#b9c9ff;font-weight:700}.hero h1{font-size:clamp(34px,5vw,58px);line-height:1.08;letter-spacing:-.04em;margin:14px 0}.hero p{max-width:720px;color:#d8e2f3;font-size:18px;margin:0}.wrap{max-width:1120px;margin:auto;padding:28px 24px 72px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:-18px;position:relative}.stat,.card,.panel{background:var(--paper);border:1px solid var(--line);border-radius:18px;box-shadow:0 8px 26px #16294a0a}.stat{padding:18px 20px}.stat strong{font-size:24px;display:block}.stat span{color:var(--muted);font-size:14px}
+.section-head{display:flex;justify-content:space-between;align-items:end;gap:16px;margin:42px 0 18px}.section-head h2{margin:0;font-size:25px;letter-spacing:-.02em}.section-head p{margin:0;color:var(--muted);font-size:14px}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.card{padding:22px;display:flex;gap:16px;min-height:178px}.num{flex:none;width:44px;height:44px;border-radius:14px;background:#edf1ff;color:var(--blue);font-weight:800;display:grid;place-items:center}.card h3{margin:0;font-size:19px}.card p{margin:7px 0 12px;color:var(--muted);font-size:14px}.tag{display:inline-block;border-radius:999px;padding:4px 10px;font-size:12px;font-weight:700;background:#eaf6ef;color:var(--green)}.tag.wait{background:#fff3df;color:var(--amber)}.file{display:inline-block;color:var(--blue);font-size:13px;text-decoration:none;margin-top:8px}.file:hover{text-decoration:underline}
+.flow{display:flex;align-items:center;gap:10px;flex-wrap:wrap;padding:22px}.step{background:#f1f4ff;border:1px solid #dfe5ff;border-radius:12px;padding:10px 14px;font-weight:650;font-size:14px}.arrow{color:#93a0b5;font-weight:700}.panel{padding:22px;margin-top:18px}.panel h2{font-size:20px;margin:0 0 8px}.panel p{color:var(--muted);margin:0}.footer{margin-top:32px;color:#7a8799;font-size:13px;text-align:center}
+@media(max-width:700px){.stats{grid-template-columns:1fr}.grid{grid-template-columns:1fr}.section-head{display:block}.section-head p{margin-top:5px}.hero{padding-top:48px}}
+</style>
+</head>
+<body>
+<header class="hero"><div class="kicker">DAMY-agent · Showcase</div><h1>YouTube Video<br>Summary Agent</h1><p>Agent hỗ trợ lấy phụ đề video YouTube, rút ý chính và tổ chức nội dung thành ghi chú Markdown dễ tra cứu.</p></header>
+<main class="wrap">
+<section class="stats" aria-label="Tình trạng lộ trình"><div class="stat"><strong>4 / 6</strong><span>Cấp đã có tài liệu mô tả sơ bộ</span></div><div class="stat"><strong>2</strong><span>Cấp đang chờ định nghĩa và bổ sung</span></div><div class="stat"><strong>01</strong><span>Quy trình: tóm tắt video YouTube</span></div></section>
+<div class="section-head"><h2>Lộ trình xây dựng Agent</h2><p>Các cấp 1–4 phản ánh nội dung hiện có trong thư mục.</p></div>
+<section class="grid">
+<article class="card"><div class="num">01</div><div><h3>Tìm nhân viên Agent</h3><p><b>YouTube Video Summary Agent</b><br>Nền tảng: CLI / Terminal Python Script. Nhiệm vụ: lấy transcript, tóm tắt ý chính và tạo ghi chú Markdown.</p><span class="tag">Có tài liệu · sơ bộ</span><br><a class="file" href="01-%E5%B2%97%E4%BD%8D%E5%8D%A1.md">Mở 01-岗位卡.md →</a></div></article>
+<article class="card"><div class="num">02</div><div><h3>Định nghĩa vị trí và thẻ công việc</h3><p>Đầu vào: URL video hoặc phụ đề. Đầu ra: tóm tắt Markdown có cấu trúc, gạch đầu dòng và hành động cần làm.</p><span class="tag">Có tài liệu · sơ bộ</span><br><a class="file" href="02-%E5%B7%A5%E4%BD%9C%E6%B5%81%E5%8D%A1%E7%89%87.md">Mở 02-工作流卡片.md →</a></div></article>
+<article class="card"><div class="num">03</div><div><h3>Logic quy trình</h3><p>Nhận link → lấy transcript/phụ đề → xử lý và tóm tắt → xuất báo cáo Markdown.</p><span class="tag">Có tài liệu · sơ bộ</span><br><a class="file" href="03-%E6%B5%81%E7%A8%8B%E5%9B%BE.md">Mở 03-流程图.md →</a></div></article>
+<article class="card"><div class="num">04</div><div><h3>Hồ sơ Agent</h3><p>Vai trò: trợ lý tóm tắt video. Ranh giới: chỉ dựa trên transcript, không thêm thông tin bên ngoài thiếu căn cứ.</p><span class="tag">Có tài liệu · sơ bộ</span><br><a class="file" href="04-Profile.md">Mở 04-Profile.md →</a></div></article>
+<article class="card"><div class="num">05</div><div><h3>Cấp 5</h3><p>Chưa có file hoặc tiêu chí Cấp 5 trong thư mục hiện tại.</p><span class="tag wait">Đang chờ định nghĩa</span></div></article>
+<article class="card"><div class="num">06</div><div><h3>Cấp 6</h3><p>Chưa có file hoặc tiêu chí Cấp 6 trong thư mục hiện tại.</p><span class="tag wait">Đang chờ định nghĩa</span></div></article>
+</section>
+<div class="section-head"><h2>Luồng xử lý hiện tại</h2></div>
+<section class="panel flow"><span class="step">1 · Nhận link YouTube</span><span class="arrow">→</span><span class="step">2 · Lấy transcript/phụ đề</span><span class="arrow">→</span><span class="step">3 · Tóm tắt nội dung</span><span class="arrow">→</span><span class="step">4 · Xuất ghi chú Markdown</span></section>
+<section class="panel"><h2>Ghi chú tình trạng</h2><p>Các tài liệu cấp 1–4 hiện là bản mô tả ngắn, chưa được xác nhận là hoàn chỉnh theo một bộ tiêu chí DAMY chính thức. Cấp 5–6 sẽ được cập nhật khi có định nghĩa và nội dung tương ứng.</p></section>
+<div class="footer">DAMY-agent · Bản trưng bày tổng hợp từ các tệp hiện có</div>
+</main></body></html>
